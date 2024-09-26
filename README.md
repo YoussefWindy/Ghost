@@ -4,7 +4,7 @@
 
 Do you have a younger sibling? Are you worried about them going places on the internet they shouldn't? This should help you out ;)
 
-*Please note that you will need to customize this script to your particular device. Instructions are below.
+*Please note that you will need to customize this script to the particular device you are trying to sniff. Instructions are below.
 
 ## Authors
 
