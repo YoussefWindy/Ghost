@@ -31,7 +31,7 @@ def capture_sni(packet):
         pass
 
 try:
-    capture = pyshark.LiveCapture(interface='\\Device\\NPF_{37D94C79-2903-4389-8AF5-7CB45F4B38AE}', display_filter='tls.handshake')
+    capture = pyshark.LiveCapture(interface='\\Device\\NPF_{...}', display_filter='tls.handshake')
     capture.sniff(timeout=10)
 
     for packet in capture.sniff_continuously():

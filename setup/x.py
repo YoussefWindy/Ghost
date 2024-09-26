@@ -17,7 +17,6 @@ def main():
         print(f"{iface}: {get_if_hwaddr(iface)}")
 
     # Specify the interface (e.g., "Ethernet" or "Wi-Fi")
-    # Replace YOUR_INTERFACE_IDENTIFIER with the correct identifier
     for i in conf.ifaces:
         conf.iface = i
         mac = get_if_hwaddr(f"\\Device\\NPF_{i}")

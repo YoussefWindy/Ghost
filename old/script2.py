@@ -110,7 +110,7 @@ def main():
     # List all interfaces to help select the right one
     #sniff(prn=packet_callback, store=0, filter="tcp")
     # Specify the interface (e.g., "Ethernet" or "Wi-Fi")
-    interface = '\\Device\\NPF_{37D94C79-2903-4389-8AF5-7CB45F4B38AE}'   # Change this to the correct interface name
+    interface = '\\Device\\NPF_{...}'   # Change this to the correct interface name
     logging.info(f"Using interface: {interface}")
     sniff(prn=packet_callback, store=0, filter="tcp", iface=interface)
 

@@ -111,6 +111,6 @@ if __name__ == "__main__":
         logging.error("Could not connect to MongoDB. Exiting...")
     else:
         # Start sniffing for HTTPS packets
-        interface = "\\Device\\NPF_{37D94C79-2903-4389-8AF5-7CB45F4B38AE}"
+        interface = "\\Device\\NPF_{...}"
         logging.info(f"Starting packet sniffing on interface: {interface}")
         sniff(iface=interface, filter="tcp port 443", prn=packet_callback, store=0)
