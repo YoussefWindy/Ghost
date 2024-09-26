@@ -53,11 +53,16 @@ In the script there are a number of setup markers. Each marker is right above th
 
 ### Finding the Network Interface
 
-1. Open command prompt in this directory.
-2. Run `ipconfig /all`
-3. Find the network interface that you are connected to the internet with. It should be named something like `Wireless LAN Adapter Wi-Fi`. It will probably not be named exactly that but there should usually be only one interface with "Wi-fi" in the name. Take note of the physical address (or MAC address).
-4. Run `python setup/x.py`
-5. Find the network interface with the same MAC address as the one you took note of in step 3, it will be a bunch of letters and numbers in the form `XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`. This is the Network Interface we're looking for.
+1. Open command prompt in this directory and run the following:
+```bash
+ipconfig /all
+```
+2. Find the network interface that you are connected to the internet with. It should be named something like `Wireless LAN Adapter Wi-Fi`. It will probably not be named exactly that but there should usually be only one interface with "Wi-fi" in the name. Take note of the physical address (or MAC address).
+3. Run the following:
+```bash
+python setup/x.py
+```
+4. Find the network interface with the same MAC address as the one you took note of in step 2, it will be a bunch of letters and numbers in the form `XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`. This is the Network Interface we're looking for.
 
 This part can tend to be tricky. If, after these instructions, you still can't find the network interface, ask [Chad](https://chatgpt.com "Chad")! He's always happy to help.
 
